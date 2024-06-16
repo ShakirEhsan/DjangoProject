@@ -6,4 +6,4 @@ from django.shortcuts import render
 def learn_django(request):
     
     
-    return render(request,'course/info.html',{'title':'learn django course','cname':'Django'})
+    return render(request,'course/base.html',{'title':'learn django course','cname':'Django'})

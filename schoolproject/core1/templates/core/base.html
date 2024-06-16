@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   {% block corecss %}
+    <link rel="stylesheet" href="{% static 'core/css/bootstarp.css' %}
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}
+   " />
+    {% endblock corecss %}
+    <title>{{title}}</title>
+</head>
+<body>
+    <h1></h1>
+    <img src="{% static 'images/iphone.jpg' %}" alt="Image">
+    <img src="{% get_static_prefix  %}images/code.jpg" alt="Django">
+    <hr>
+    <form action="">
+        <input type="button" value="Click Me" onclick="disp()">
+    </form>
+    <script src="{% static 'core/css/jQuery.js '%}"></script>
+    <script src="{% static 'core/css/popper.js '%}"></script>
+    <script src="{% static 'core/css/all.min.js '%}"></script>
+    <script src="{% static 'core/css/bootstrap.js '%}"></script>
+
+
+</body>
+</html>
